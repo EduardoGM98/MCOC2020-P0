@@ -4,13 +4,13 @@
 - Tipo: Notebook
 - Año de adquisición: 2017 
 - Procesador: 
-              - Marca/Modelo: Intel(R) Core(TM) i5-6200U 
-              - Velocidad base: 2,40 GHz
-              - Velocidad máxima: 2,80 GHz
-              - Número de núcleos: 2
-              - Número de hilos: 4
-              - Arquitectura: x64
-              - Set de instrucciones:Intel® SSE4.1, Intel® SSE4.2, Intel® AVX2
+  - Marca/Modelo: Intel(R) Core(TM) i5-6200U 
+  - Velocidad base: 2,40 GHz
+  - Velocidad máxima: 2,80 GHz
+  - Número de núcleos: 2
+  - Número de hilos: 4
+  - Arquitectura: x64
+  - Set de instrucciones:Intel® SSE4.1, Intel® SSE4.2, Intel® AVX2
               
 - Tamaños de las cachés del procesador: 
                                         - L1: 128 kB
