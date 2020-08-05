@@ -19,9 +19,9 @@
                                         
 - Memoria: 
   - Total: 4 GB
-  - Tipo de memoria: 
+  - Tipo de memoria: DDR3
   - Velocidad: 2133 MHz
-  - Numero de (SO)DIMM:
+  - Numero de (SO)DIMM: 
            
 - Tarjeta gráfica: 
   - Marca/Modelo: Intel(R) HD Graphics 520
