@@ -41,7 +41,7 @@
 - Proveedor internet: Movistar fibra óptica
 
 #Desempeño matmul
-![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/image.png)
+![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/imagen%20graficos.jpeg)
 
 - ¿Como difiere del gráfico del profesor/ayudante?
   -R. Difiere en que los tiempos de ejecución iniciales y finales son mas altos que los del profesor y por ende el grafico cambia en esas zonas. También cambia el grafico
@@ -57,6 +57,6 @@
 - ¿Qué versión de numpy está usando?
   - 1.14.0
 - Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar. 
-  -R. ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/image.png)
+  -R. ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/uso%20procesadores.jpeg)
 
 
