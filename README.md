@@ -39,3 +39,8 @@
 - Dirección IP (Interna, del router): 192.168.1.171
 - Dirección IP (Externa, del ISP): 152.174.130.50
 - Proveedor internet: Movistar fibra óptica
+
+#Desempeño matmul
+![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/image.png)
+
+
