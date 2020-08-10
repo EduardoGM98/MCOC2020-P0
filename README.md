@@ -44,19 +44,19 @@
 ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/imagen%20graficos.jpeg)
 
 - ¿Como difiere del gráfico del profesor/ayudante?
-  -R. Difiere en que los tiempos de ejecución iniciales y finales son mas altos que los del profesor y por ende el grafico cambia en esas zonas. También cambia el grafico
+  - R. Difiere en que los tiempos de ejecución iniciales y finales son mas altos que los del profesor y por ende el grafico cambia en esas zonas. También cambia el grafico
   en que en el gráfico de uso de memoria tiene una mayor pendiente que el gráfico de el profesor.
 - ¿A qué se pueden deber las diferencias?
-  -R. Las diferencias se pueden deber principalmente a que los computadores son distintos, por ende mis timpos de ejecución y el uso de memoria en mi pc es más
+  - R. Las diferencias se pueden deber principalmente a que los computadores son distintos, por ende mis timpos de ejecución y el uso de memoria en mi pc es más
   alto que en el computador de el profesor.
 - El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurrido no lo es ¿porqué puede ser?
-  -R. Se debe a que la matriz es cuadrada y por ende el tiempo de ejecución es exponencial, a diferencia del uso de memoria que siempre aumenta lineal si es que la
+  - R. Se debe a que la matriz es cuadrada y por ende el tiempo de ejecución es exponencial, a diferencia del uso de memoria que siempre aumenta lineal si es que la
   dificultad del problema aumenta.
 - ¿Qué versión de python está usando?
-  -R. 3.6
+  - R. 3.6
 - ¿Qué versión de numpy está usando?
-  - 1.14.0
+  - R. 1.14.0
 - Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar. 
-  -R. ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/uso%20procesadores.jpeg)
+  - R. ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/uso%20procesadores.jpeg)
 
 
