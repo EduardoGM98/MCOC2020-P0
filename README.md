@@ -40,7 +40,7 @@
 - Dirección IP (Externa, del ISP): 152.174.130.50
 - Proveedor internet: Movistar fibra óptica
 
-#Desempeño matmul
+# Desempeño matmul
 ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/imagen%20graficos.jpeg)
 
 - ¿Como difiere del gráfico del profesor/ayudante?
