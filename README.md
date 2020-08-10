@@ -65,7 +65,7 @@
 
 # Desempeño MIMATMUL
 
-![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/graficos%20mimatmul.jpeg)
+![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/mimatmul_gr%C3%A1ficos.png)
 
 - ¿Como difiere del gráfico del profesor/ayudante?
   - R. En el caso del gráfico de tiempo de ejecución, difiere principalmente en el tiempo inicial de ejecución, siendo más alto en mi caso que en el caso del profesor/ayudante.
