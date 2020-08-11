@@ -74,8 +74,8 @@
   - R. Esta diferencia se puede deber al uso de computadores distintos o también se puede deber a que como esta vez cada uno tenía que escribir un programa propio para calcular la multiplicación de matrices (y no se utiliza una función de python), entonces un codigo puede ser mas eficiente que otro y por ende los tiempos de ejecución pueden ser distintos.
 
 - El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurrido no lo es ¿porqué puede ser?
-  - R. En este caso 
-  
+  - R. Se debe a que la matriz es cuadrada y por ende el tiempo de ejecución aumenta exponencialmente cuando aumenta el tamaños de la matriz, a diferencia del uso de memoria que siempre aumenta lineal si es que la dificultad del problema aumenta.
+ 
 - ¿Qué versión de python está usando?
   - R. 3.6
 
