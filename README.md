@@ -83,5 +83,6 @@
   - R. 1.14.0 
 
 - Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar. 
-  - R. 
+  - R. ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/uso%20procesadores%20mimatmul.png)
+
 
