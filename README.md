@@ -85,5 +85,13 @@
 - Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar. 
   - R. Si, se utilzan los 4 procesadores.
   ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/uso%20procesadores%20mimatmul.png)
+  
+# Desempeño de INV
+
+- Tamaños en memoria de los distintos tipos de datos:
+  - half: 16 bytes
+  - single: 32 bytes
+  - double: 64 bytes
+  - long double: 64 bytes
 
 
