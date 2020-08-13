@@ -88,10 +88,31 @@
   
 # Desempeño de INV
 
+- Desempeño de los 3 casos:
+  - caso 1: ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/graficos%20inv%20matrices%20caso%201.png)
+  - caso 2: ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/graficos%20inv%20matrices%20caso%202.png)
+  - caso 3: ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/graficos%20inv%20matrices%20caso%203.png)
+  Se puede apreciar que para el caso 1 numpy no soportaba los tamaños de half y longdouble por lo que no aparecen en el gráfico. También se puede ver que al usar la opción del caso 3 si mejora el desempeño. Por último, se ve que el uso de memoria para double y longdouble en el caso 2 y 3 son iguales ya que los dos son float64.
+  
 - Tamaños en memoria de los distintos tipos de datos:
   - half: 16 bytes
   - single: 32 bytes
   - double: 64 bytes
   - long double: 64 bytes
 
+- Uso de memoria para cada caso:
+  - caso 1: ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/uso%20procesadores%20inv%20matrices%20caso%201.png)
+  - caso 2: ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/uso%20procesadores%20inv%20matrices%20caso%202.png)
+  - caso 3: ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/uso%20procesadores%20inv%20matrices%20caso%203.png)
+  Se puede ver en las tres imagenes que el caso 1 es el que mas porcentaje de memoria utiliza para invertir las matrices, seguido del caso 3 y por último el que menos memoria utiliza es el caso 2. También se puede apreciar que practicamente todos los procesadores son utilizados para resolver los porblemas.
+  
+- ¿Qué algoritmo de inversión cree que utiliza cada método (ver wiki)?
+  - R. Para el caso de numpy creo que se utiliza el método de Gaussian ya que es el proceso que más utilizo memoria de los 3 casos que analizamos y esto se puede deber a que para Gauss se tienen que generar las matrices triangular superior y triangular inferior que, creo yo, puede hacer que se utilize más memoria del procesador.
+  Para Scipy creo que utilizó el método Eigendecomposition, ya que este método es mas facil para calcular la inversa de una matriz cuadrada y por ende puede producir un menos uso de memoria de los procesadores ya que no era muy compleja la operación.
+  
+- ¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso?
+  - R. Para el caso 1, se puede ver que para el dtype=double si influyó la estructura de caché y el paralelismo ya que la curva va creciendo desde que se demora menos con menos memoria hasta que cuando se requiere mas memoria el tiempo también crece y se debe a que comienza en los primeros niveles del caché y luego a medida de que la memoria de los caché se vaya llenando entonces sube a los otros niveles de caché y luego a ram y que a medido que sube, el tiempo de resolución aumenta ya que los niveles superiores de caché y luego la memoria ram son más lentos que los de abajo. Pero para dtype=single no ocurre esto ya que la curva tiene saltos que en ciertos puntos se demora bastante tiempo en comparación al punto siguiente que se demora muy poco.
+  Para el caso 2, se aprecia lo mismo que en el caso 1, ya que para dtype=double y longdouble la curva va creciendo en tiempo a medida que aumenta la memoria, pero para los dtype=half y single esto no ocurre debido a los saltos que ocurren entre un punto a otro.
+  Finalmente, para el caso 3, la estructura de caché y el paralelismo se ven reflejados en todos los dtypes, ya que cuando el uso de memoria es muy pequeño, L1 comienza a trabajar y es el más rápido de todos y por ende el tiempo de ejecución es muy chico, pero a medida que la memoria aumenta, L1 va a tener que trabajar en paralelo con L2, luego con L3 y asi sucesivamente hasta resolver todo el problema, y cuando esto ocurre los tiempos de ejecución son más altos, viendose esto reflejado en los gráficos mostrados anteriormente.
+  
 
