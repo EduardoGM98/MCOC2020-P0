@@ -95,7 +95,8 @@
   ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/graficos%20inv%20matrices%20caso%202.png)
   - caso 3: 
   ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/graficos%20inv%20matrices%20caso%203.png)
-  Se puede apreciar que para el caso 1 numpy no soportaba los tamaños de half y longdouble por lo que no aparecen en el gráfico. También se puede ver que al usar la opción del caso 3 si mejora el desempeño. Por último, se ve que el uso de memoria para double y longdouble en el caso 2 y 3 son iguales ya que los dos son float64.
+ 
+ Se puede apreciar que para el caso 1 numpy no soportaba los tamaños de half y longdouble por lo que no aparecen en el gráfico. También se puede ver que al usar la opción del caso 3 si mejora el desempeño. Por último, se ve que el uso de memoria para double y longdouble en el caso 2 y 3 son iguales ya que los dos son float64.
   
 - Tamaños en memoria de los distintos tipos de datos:
   - half: 16 bytes
