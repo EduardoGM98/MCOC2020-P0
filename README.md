@@ -124,5 +124,9 @@
 
 ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/Entrega%206/gr%C3%A1fico%20A_invB%20parte%202.png)
 
+Se puede apreciar en el gráfico que la función que mas tiempo demoró cuando N=10000 es la función de numpy que invierte la matríz para resolver el sistema de ecuaciones, en cambio la que menos se demoró fue la función que utiliza el solve de scipy utilziando los parámetros "pos" y "overwrite_b". Pero se puede apreciar que esto no es así en un principio, ya que el solver de numpy fue el que menos demoro para N=2, mientras el que más se demoró para este mismo N fue el solver de scipy con el argumento "symmetric", que luego estos 2 últimos solvers se demorarán prácticamente los mismo que las otras funciones. 
+Los distintos tiempos de ejecución de cada solver se deben a que cada solver realiza la operación de distinta manera, afectando al desempeño de un solver en comparacióon con los otros. En el caso del desempeño de la función de numpy que invierte la matriz, ya se podría haber previsto que iba a ser la que más tiempo iba a demorar ya que no es muy óptimo tener que invertir una matriz de 10000 x 10000 y se comprobó que es así ya que fue la función que más demoró. En el caso del solver que menos se demoró, se puede deber a los parámetros "pos" y "overwrite_b" que se utilizaron para este caso, ya que el primero de estos hace que la matriz se defina como definida positiva y el segundo de estos sobreescribe los datos de la matriz B, mejorando el rendimiento de esta solución y por ende ser la función que menos se demora. 
+
+
 
 
