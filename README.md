@@ -120,3 +120,9 @@
   Finalmente, para el caso 3, la estructura de caché y el paralelismo se ven reflejados en todos los dtypes, ya que cuando el uso de memoria es muy pequeño, L1 comienza a trabajar y es el más rápido de todos y por ende el tiempo de ejecución es muy chico, pero a medida que la memoria aumenta, L1 va a tener que trabajar en paralelo con L2, luego con L3 y asi sucesivamente hasta resolver todo el problema, y cuando esto ocurre los tiempos de ejecución son más altos, viendose esto reflejado en los gráficos mostrados anteriormente.
   
 
+# Desempeño Ax = B
+
+![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/Entrega%206/gr%C3%A1fico%20A_invB%20parte%202.png)
+
+
+
