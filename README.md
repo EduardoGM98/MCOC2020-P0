@@ -128,6 +128,26 @@ Se puede apreciar en el gráfico que la función que mas tiempo demoró cuando N
 Los distintos tiempos de ejecución de cada solver se deben a que cada solver realiza la operación de distinta manera, afectando al desempeño de un solver en comparacióon con los otros. En el caso del desempeño de la función de numpy que invierte la matriz, ya se podría haber previsto que iba a ser la que más tiempo iba a demorar ya que no es muy óptimo tener que invertir una matriz de 10000 x 10000 y se comprobó que es así ya que fue la función que más demoró. En el caso del solver que menos se demoró, se puede deber a los parámetros "pos" y "overwrite_b" que se utilizaron para este caso, ya que el primero de estos hace que la matriz se defina como definida positiva y el segundo de estos sobreescribe los datos de la matriz B, mejorando el rendimiento de esta solución y por ende ser la función que menos se demora. 
 Se puede notar que para N muy grandes, los distintos solver se demoran prácticamente lo mismo, siendo la diferencia muy chica, a diferencia de la función de numpy que invierte las matrices ya que su tiempo final de ejecución es mucho más alto que el de los otros, ya que como se puede ver en el gráfico todos los otros solvers se demoran alrededor de 10 segundos, o un poco más en algunos casos, en la ejecución para N=10000 pero la función numpy que invierte las matrices se demora alrededor de 1 minuto, una diferencia considerable en el caso de que se quieran resolver problemas de este tipo o con matrices que tengan un N más grande. 
 
+# Matrices dispersas y complejidad computaciona
+- Matriz llena matmul.
+![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/Entrega%207/grafico%20matriz%20llena%20matmul.png)
+
+- Matriz dispersa matmul.
+![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/Entrega%207/grafico%20matriz%20dispersa%20matmul.png)
+
+- Matriz llena inv
+![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/Entrega%207/grafico%20matriz%20llena%20inv.png)
+
+- Matriz dispersa inv
+![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/Entrega%207/grafico%20matriz%20dispersa%20inv.png)
+
+- Matriz llena Ax=b
+![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/Entrega%207/grafico%20matriz%20llena%20Ax%3Db.png)
+
+- Matriz inversa Ax=b
+![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/Entrega%207/grafico%20matriz%20dispersa%20Ax%3Db.png)
+
+
 
 
 
