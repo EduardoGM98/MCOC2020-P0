@@ -136,22 +136,22 @@ def matriz_laplaceana(N, d=double):
     return L
 ```
 - Matriz llena matmul.
-![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/Entrega%207/grafico%20matriz%20llena%20matmul.png)
+![alt text]()
 
 - Matriz dispersa matmul.
-![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/Entrega%207/grafico%20matriz%20dispersa%20matmul.png)
+![alt text]()
 
 - Matriz llena inv
-![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/Entrega%207/grafico%20matriz%20llena%20inv.png)
+![alt text]()
 
 - Matriz dispersa inv
-![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/Entrega%207/grafico%20matriz%20dispersa%20inv.png)
+![alt text]()
 
 - Matriz llena Ax=b
-![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/Entrega%207/grafico%20matriz%20llena%20Ax%3Db.png)
+![alt text]()
 
 - Matriz inversa Ax=b
-![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/Entrega%207/grafico%20matriz%20dispersa%20Ax%3Db.png)
+![alt text]()
 
 
 - Comente las diferencias que ve en el comportamiento de los algoritmos en el caso de matrices llenas y dispersas.
