@@ -129,6 +129,12 @@ Los distintos tiempos de ejecución de cada solver se deben a que cada solver re
 Se puede notar que para N muy grandes, los distintos solver se demoran prácticamente lo mismo, siendo la diferencia muy chica, a diferencia de la función de numpy que invierte las matrices ya que su tiempo final de ejecución es mucho más alto que el de los otros, ya que como se puede ver en el gráfico todos los otros solvers se demoran alrededor de 10 segundos, o un poco más en algunos casos, en la ejecución para N=10000 pero la función numpy que invierte las matrices se demora alrededor de 1 minuto, una diferencia considerable en el caso de que se quieran resolver problemas de este tipo o con matrices que tengan un N más grande. 
 
 # Matrices dispersas y complejidad computaciona
+```
+def matriz_laplaceana(N, d=double):
+    L=-(np.eye(N, k=-1, dtype=d))+2*\
+      (np.eye(N, dtype=d)) + -(np.eye(N, k=+1, dtype=d))
+    return L
+```
 - Matriz llena matmul.
 ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/Entrega%207/grafico%20matriz%20llena%20matmul.png)
 
@@ -146,6 +152,24 @@ Se puede notar que para N muy grandes, los distintos solver se demoran práctica
 
 - Matriz inversa Ax=b
 ![alt text](https://github.com/EduardoGM98/MCOC2020-P0/blob/master/Entrega%207/grafico%20matriz%20dispersa%20Ax%3Db.png)
+
+
+- Comente las diferencias que ve en el comportamiento de los algoritmos en el caso de matrices llenas y dispersas.
+  - R. Principalmente se puede ver que en el caso de las matrices dispersas los puntos son más estables que en el caso de matrices llenas, es decir, que en el gráfico no se ven tantos saltos de tiempo, entre un punto y otro, a diferencia de los gráficos de matrices llenas.
+  
+- ¿Cual parece la complejidad asintótica (para LaTeX: N\rightarrow\inftyN → ∞)  para el ensamblado y solución en ambos casos y porqué?
+  - R. Caso matmul llena: para el ensamblado de la matriz la complejidad asintotática parece ser O(N**2) ya que los puntos finales tienden a establecerse en esa asíntota, en cambio para la solución parece ser O(N**3) ya que el algoritmo sigue en gran parte a esa asíntota.
+  Caso matmul dispersa: para el ensamblado nuemvamente parece ser O(N**2), debido a que el algoritmo se mantiene pegado a esa asíntota durante gran parte de su largo, mientras que para la solución se parece más a O(N**4) en su último tramo.
+  Caso inv llena: para el ensamblado de este caso, el algoritmo tiende a parecerse, cuando tiende a infinito, a O(N**4) ya que parece ser que tiende a esa asíntota en su último tramo, en cambio, para la solución, la complejidad asintitatica parece ser O(N**3) dada la misma razón anterior.
+  Caso inv dispersa: Para el ensamblado, parece ser que la complejidad asintotática tiende a O(N**4) dado que el algoritmo se mantiene, en los puntos finales, asintotático a eso. Para el caso de la solución, y debido a la forma que toma el algoritmo en los últimos puntos, la complejidad asintotática se parece a O(N**4)
+  Caso Ax=b llena: Para este caso, en el ensamble de la matriz cuando tiende a infinito, la complejidad asintotática parece ser O(N) ya que no es muy grande la pendiente en el tramo final del algoritmo y por ende tiende a eso. Para la solución, tiende a la asíntota de O(N**2) debido a lo mismo que para el ensamble.
+  Caso Ax=b dispersa: En este caso para el ensamble, al igual que para el caso anterior, cuando tiende a infinto, la complejidad asintotática tiende a O(N) dado que la curva del algoritmo tiende a esa asíntota en sus últimos puntos. Para el caso de la solución, en los últimos puntos se puede ver que la curva tiende a O(N**4).
+  
+- ¿Como afecta el tamaño de las matrices al comportamiento aparente?
+  - R. Que a medida que aumenta el tamaño de la matriz, el tiempo de ejecución del algoritmo va a ir en aumento, por ende el gráfico del algoritmo va a ser creciente, al punto de hacerse asintotático en cualquiera de los casos de complejidad asintotática vistos anteriormente.
+  
+- ¿Qué tan estables son las corridas (se parecen todas entre si siempre, nunca, en un rango)?
+  - R. Por lo general, las distintas corridas son muy estables, la mayoría se parece mucho entre si, sobretodo cuando los tamaños de las matrices son muy grandes. En algunos casos en los puntos iniciales, hay una corrida que es muy distinta a las otras, puede deberse a que cuando se corrión el programa esa vez, el uso de memoria era más elevado debido a que podría estar abiertas otras aplicaciones, pero igual, por lo general, es muy estable.
 
 
 
